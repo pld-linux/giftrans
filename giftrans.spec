@@ -44,7 +44,7 @@ gcc -Dvoidd=void $RPM_OPT_FLAGS -s -o giftrans giftrans.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/{bin,man/man1}
+install -d $RPM_BUILD_ROOT%{_bindir},%{_mandir}/man1}
 
 install -s giftrans $RPM_BUILD_ROOT%{_bindir}
 install giftrans.1 $RPM_BUILD_ROOT%{_mandir}/man1
