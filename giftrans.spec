@@ -5,9 +5,10 @@ Summary(pl): Program do konwertowania i manipulacji plikami w formacie GIF
 Summary(tr): GIF dosyalarýný baþka biçimlere çevirir
 Name:        giftrans
 Version:     1.12.2
-Release:     3
+Release:     4
 Copyright:   BSD
 Group:       Applications/Graphics
+Group(pl):   Aplikacje/Grafika
 Source:      ftp://ftp.rz.uni-karlsruhe.de/pub/net/www/tools/%{name}-%{version}.tar.gz
 Buildroot:   /tmp/%{name}-%{version}-root
 
@@ -48,6 +49,8 @@ install -d $RPM_BUILD_ROOT/usr/{bin,man/man1}
 install -s giftrans $RPM_BUILD_ROOT/usr/bin
 install giftrans.1 $RPM_BUILD_ROOT/usr/man/man1
 
+gzip -9nf $RPM_BUILD_ROOT/usr/man/man1/*
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -56,8 +59,13 @@ rm -rf $RPM_BUILD_ROOT
 %attr(644,root, man) /usr/man/man1/*.1
 
 %changelog
+* Wed Feb 17 1999 Micha³ Kuratczyk <kurkens@polbox.com>
+  [1.12.2-4]
+- added Group(pl)
+- added gzipping man page
+
 * Tue Nov 17 1998 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
-  [1.12.2-1]
+  [1.12.2-3]
 - major changes.
 
 * Mon Apr 27 1998 Prospector System <bugs@redhat.com>
