@@ -9,6 +9,7 @@ Release:	9
 License:	BSD
 Group:		Applications/Graphics
 Source0:	ftp://ftp.rz.uni-karlsruhe.de/pub/net/www/tools/%{name}-%{version}.tar.gz
+# Source0-md5:	58712d7c2dcbd8ea5f0dc18945dfcabd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
