@@ -57,22 +57,3 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*.1
-
-%changelog
-* Wed Feb 17 1999 Micha³ Kuratczyk <kurkens@polbox.com>
-  [1.12.2-4]
-- added Group(pl)
-- added gzipping man page
-
-* Tue Nov 17 1998 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
-  [1.12.2-3]
-- major changes.
-
-* Mon Apr 27 1998 Prospector System <bugs@redhat.com>
-- translations modified for de, fr, tr
-
-* Tue Oct 21 1997 Otto Hammersmith <otto@redhat.com>
-- udpated version
-
-* Thu Jul 10 1997 Erik Troan <ewt@redhat.com>
-- built against glibc
