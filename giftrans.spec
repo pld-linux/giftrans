@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(755,root,root) /usr/bin/*
-%attr(644,root, man) %{_mandir}/man1/*.1
+%{_mandir}/man1/*.1
 
 %changelog
 * Wed Feb 17 1999 Micha³ Kuratczyk <kurkens@polbox.com>
