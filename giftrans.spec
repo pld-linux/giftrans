@@ -40,7 +40,7 @@ saydam hale getirmektir.
 %setup -q
 
 %build
-%{__cc} -Dvoidd=void %{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g} -o giftrans giftrans.c
+%{__cc} -Dvoidd=void %{?debug:-O -g}%{!?debug:$RPM_OPT_FLAGS} -o giftrans giftrans.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
