@@ -1,0 +1,70 @@
+Summary:     converts and manipulates GIFs
+Summary(de): konvertiert und manipuliert GIFs 
+Summary(fr): converti et manipule des GIFs
+Summary(pl): Program do konwertowania i manipulacji plikami w formacie GIF
+Summary(tr): GIF dosyalarýný baþka biçimlere çevirir
+Name:        giftrans
+Version:     1.12.2
+Release:     1
+Copyright:   BSD
+Group:       Applications/Graphics
+Source:      ftp://ftp.rz.uni-karlsruhe.de/pub/net/www/tools/%{name}-%{version}.tar.gz
+Buildroot:   /tmp/%{name}-%{version}-root
+
+%description
+This program can convert and manipulate GIF images from the 
+command line.  It is most useful for making a color transparent
+for web sites.
+
+%description -l de
+Dieses Programm kann GIF-Bilder aus der Befehlszeile konvertieren und 
+manipulieren. Besonders praktisch ist es, um eine Farbe für Web-Seiten
+transparent zu machen. 
+
+%description -l fr
+Ce programme convertit et manipule des images GIF à partir de
+la ligne de commande. Il est surtout utilisé pour créer une
+couleur transparente pour les sites web.
+
+%description -l pl
+Program do konwertowania i manipulacji plikami w formacie GIF.
+Szczególnie u¿yteczny do robienia kolorowych witryn WWW.
+
+%description -l tr
+Bu program, GIF biçimindeki resim dosyalarýný baþka biçimlere çevirir. En
+yaygýn kullaným alanlarýndan biri, web siteleri için resimleri saydam hale
+getirmektir.
+
+%prep
+%setup -q
+
+%build
+gcc -Dvoidd=void $RPM_OPT_FLAGS -s -o giftrans giftrans.c
+
+%install
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT/usr/{bin,man/man1}
+
+install -s giftrans $RPM_BUILD_ROOT/usr/bin
+install giftrans.1 $RPM_BUILD_ROOT/usr/man/man1
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%attr(755,root,root) /usr/bin/*
+%attr(644,root, man) /usr/man/man1/*.1
+
+%changelog
+* Tue Nov 17 1998 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
+  [1.12.2-1]
+- major changes.
+
+* Mon Apr 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* Tue Oct 21 1997 Otto Hammersmith <otto@redhat.com>
+- udpated version
+
+* Thu Jul 10 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
