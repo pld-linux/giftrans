@@ -10,7 +10,7 @@ Copyright:   BSD
 Group:       Applications/Graphics
 Group(pl):   Aplikacje/Grafika
 Source:      ftp://ftp.rz.uni-karlsruhe.de/pub/net/www/tools/%{name}-%{version}.tar.gz
-Buildroot:   /tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 This program can convert and manipulate GIF images from the 
