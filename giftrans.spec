@@ -1,5 +1,5 @@
 Summary:	converts and manipulates GIFs
-Summary(de):	konvertiert und manipuliert GIFs 
+Summary(de):	konvertiert und manipuliert GIFs
 Summary(fr):	converti et manipule des GIFs
 Summary(pl):	Program do konwertowania i manipulacji plikami w formacie GIF
 Summary(tr):	GIF dosyalarýný baþka biçimlere çevirir
