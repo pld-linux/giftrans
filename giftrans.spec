@@ -47,16 +47,16 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/{bin,man/man1}
 
 install -s giftrans $RPM_BUILD_ROOT/usr/bin
-install giftrans.1 $RPM_BUILD_ROOT/usr/man/man1
+install giftrans.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf $RPM_BUILD_ROOT/usr/man/man1/*
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(755,root,root) /usr/bin/*
-%attr(644,root, man) /usr/man/man1/*.1
+%attr(644,root, man) %{_mandir}/man1/*.1
 
 %changelog
 * Wed Feb 17 1999 Micha³ Kuratczyk <kurkens@polbox.com>
