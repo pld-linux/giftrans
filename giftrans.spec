@@ -1,15 +1,15 @@
-Summary:     converts and manipulates GIFs
-Summary(de): konvertiert und manipuliert GIFs 
-Summary(fr): converti et manipule des GIFs
-Summary(pl): Program do konwertowania i manipulacji plikami w formacie GIF
-Summary(tr): GIF dosyalarýný baþka biçimlere çevirir
-Name:        giftrans
-Version:     1.12.2
-Release:     4
-Copyright:   BSD
-Group:       Applications/Graphics
-Group(pl):   Aplikacje/Grafika
-Source:      ftp://ftp.rz.uni-karlsruhe.de/pub/net/www/tools/%{name}-%{version}.tar.gz
+Summary:	converts and manipulates GIFs
+Summary(de):	konvertiert und manipuliert GIFs 
+Summary(fr):	converti et manipule des GIFs
+Summary(pl):	Program do konwertowania i manipulacji plikami w formacie GIF
+Summary(tr):	GIF dosyalarýný baþka biçimlere çevirir
+Name:		giftrans
+Version:	1.12.2
+Release:	5
+Copyright:	BSD
+Group:		Applications/Graphics
+Group(pl):	Aplikacje/Grafika
+Source:		ftp://ftp.rz.uni-karlsruhe.de/pub/net/www/tools/%{name}-%{version}.tar.gz
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
