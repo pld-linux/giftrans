@@ -1,6 +1,6 @@
-Summary:	converts and manipulates GIFs
-Summary(de):	konvertiert und manipuliert GIFs
-Summary(fr):	converti et manipule des GIFs
+Summary:	Converts and manipulates GIFs
+Summary(de):	Konvertiert und manipuliert GIFs
+Summary(fr):	Converti et manipule des GIFs
 Summary(pl):	Program do konwertowania i manipulacji plikami w formacie GIF
 Summary(tr):	GIF dosyalarýný baþka biçimlere çevirir
 Name:		giftrans
