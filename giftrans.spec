@@ -5,7 +5,7 @@ Summary(pl):	Program do konwertowania i manipulacji plikami w formacie GIF
 Summary(tr):	GIF dosyalarýný baþka biçimlere çevirir
 Name:		giftrans
 Version:	1.12.2
-Release:	9
+Release:	10
 License:	BSD
 Group:		Applications/Graphics
 Source0:	ftp://ftp.rz.uni-karlsruhe.de/pub/net/www/tools/%{name}-%{version}.tar.gz
