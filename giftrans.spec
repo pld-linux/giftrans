@@ -1,8 +1,8 @@
 Summary:	Converts and manipulates GIFs
-Summary(de):	Konvertiert und manipuliert GIFs
-Summary(fr):	Converti et manipule des GIFs
-Summary(pl):	Program do konwertowania i manipulacji plikami w formacie GIF
-Summary(tr):	GIF dosyalarýný baþka biçimlere çevirir
+Summary(de.UTF-8):   Konvertiert und manipuliert GIFs
+Summary(fr.UTF-8):   Converti et manipule des GIFs
+Summary(pl.UTF-8):   Program do konwertowania i manipulacji plikami w formacie GIF
+Summary(tr.UTF-8):   GIF dosyalarÄ±nÄ± baÅŸka biÃ§imlere Ã§evirir
 Name:		giftrans
 Version:	1.12.2
 Release:	10
@@ -16,23 +16,23 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This program can convert and manipulate GIF images from the command
 line. It is most useful for making a color transparent for web sites.
 
-%description -l de
+%description -l de.UTF-8
 Dieses Programm kann GIF-Bilder aus der Befehlszeile konvertieren und
-manipulieren. Besonders praktisch ist es, um eine Farbe für Web-Seiten
+manipulieren. Besonders praktisch ist es, um eine Farbe fÃ¼r Web-Seiten
 transparent zu machen.
 
-%description -l fr
-Ce programme convertit et manipule des images GIF à partir de la ligne
-de commande. Il est surtout utilisé pour créer une couleur
+%description -l fr.UTF-8
+Ce programme convertit et manipule des images GIF Ã  partir de la ligne
+de commande. Il est surtout utilisÃ© pour crÃ©er une couleur
 transparente pour les sites web.
 
-%description -l pl
+%description -l pl.UTF-8
 Program do konwertowania i manipulacji plikami w formacie GIF.
-Szczególnie u¿yteczny do robienia kolorowych witryn WWW.
+SzczegÃ³lnie uÅ¼yteczny do robienia kolorowych witryn WWW.
 
-%description -l tr
-Bu program, GIF biçimindeki resim dosyalarýný baþka biçimlere çevirir.
-En yaygýn kullaným alanlarýndan biri, web siteleri için resimleri
+%description -l tr.UTF-8
+Bu program, GIF biÃ§imindeki resim dosyalarÄ±nÄ± baÅŸka biÃ§imlere Ã§evirir.
+En yaygÄ±n kullanÄ±m alanlarÄ±ndan biri, web siteleri iÃ§in resimleri
 saydam hale getirmektir.
 
 %prep
