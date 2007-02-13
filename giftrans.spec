@@ -1,8 +1,8 @@
 Summary:	Converts and manipulates GIFs
-Summary(de.UTF-8):   Konvertiert und manipuliert GIFs
-Summary(fr.UTF-8):   Converti et manipule des GIFs
-Summary(pl.UTF-8):   Program do konwertowania i manipulacji plikami w formacie GIF
-Summary(tr.UTF-8):   GIF dosyalarını başka biçimlere çevirir
+Summary(de.UTF-8):	Konvertiert und manipuliert GIFs
+Summary(fr.UTF-8):	Converti et manipule des GIFs
+Summary(pl.UTF-8):	Program do konwertowania i manipulacji plikami w formacie GIF
+Summary(tr.UTF-8):	GIF dosyalarını başka biçimlere çevirir
 Name:		giftrans
 Version:	1.12.2
 Release:	10
